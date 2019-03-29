@@ -1,0 +1,206 @@
+ h3.main{
+    
+    width:1200px;
+    margin:0px auto;
+    
+}
+/* img{
+    width:10%;
+    float:left;
+} */
+.container{
+    /* background-color:rgb(220, 220, 220); */
+    background-color:rgb(33, 47, 60);
+    width:1200px;
+     margin:0px auto;
+    
+}
+ /* h1.main1{
+    width:1200px;
+    margin:0px auto;
+} */
+
+/* .container span{
+    width:20%;
+    text-align:right;
+    font-size: 100%;
+
+}  */
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   textarea {
+    
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+  }
+  
+  input[type=radio] {
+	height: 50px;
+    width: 50px;
+    display: none;
+}
+input[type=radio]+label {
+	/* background: url('https://lh3.googleusercontent.com/CSygHWUdWSpIIfoPv3gwc0PctzOTVFGSCcSel4lOtxBBofmpt1QJxOF8MwrXbi0lIxxnKw2Cj6btMFTJZIGxWpkNpHZL41cOa5sgeSgtlsmat7YjkQlrU2XbmhPrxZwElMf9hucSAfEgF0VRLQy58ATRdf1mQULv5VcfnWFyus03KF8Egtg_pwW1_LRnklFEAUUZ_TyzEqFM3cp6G_aDyQpNCKxNvoLWkrcV-tgxqxQGAqC45JAkWWNXSxKgXD8TINX_xO1oml6fh_qVC32SwSQZqkk8Mkhvi2V3DSME0BzcS7wlku5tUK9ijkksro3Wp9kS7Ng4kyPDpkhZAh0kaiKXe4vUXfpZhhXuVjMwaP04HmMFJ7tjKt7bKvIHo0LcKv1zbbQsJ5ZTbI9wRabnUk9dWZtKE0w9BwiNbHuw1JrJBzmSCon9aQZD2DCD72DZEgaUchpdWKi-jShqHvrhaUYUeOUQiImDmo9NBKocQIW76p69uns8tbm1XXohE6tc-PKj8Cx66YtZLm4oUsvppee7Sw92GBFNvMPP9BGZSvxZmpV6TV5rNga1JBJOCMKw76SuYRNob9jCPmjzVMYjmFN8GknmaqOti7kh-QP7IlTUleyq=w25-h24-no') left top no-repeat; */
+    background-image: url("uncheck.png") ;
+    background-repeat: no-repeat;
+    display: block;
+	min-height: 40px;
+    padding-left: 35px;
+    padding-top:3px;
+}
+input[type=radio]:checked + label {
+	 /* background: url('https://lh3.googleusercontent.com/QSVgoBuOonsWKUZm6m0NKwekEvkfMOWrPFfevisISZjzeu2uQkxMOY1MUh3QgorRu2qc1kwKX4So7-mGJ-hayMAitq15L63KQNBfsOcm1qmWDU657CNl4lauYhgVz7f59IMrZBg8FWdgh26VDCvGMwUqaK6CBVv13AdKbxDMeDqiZS73EgzF5kBW5smh1nxCY5Gqk8yCmDsYh4KixdZWKGW7BqXLZn7cB2fQV4-o0DePjN69GJLXmddJ6H32CBgiFKE4smBvb1ByWpREmRYpFEUaHuQdbhHiiebI4Kipz35I6OxsVxKC6HOIQC3Xk6JVePhgudB2_-8Nyq2M9rWqIap8kAhmN-FI8iRdSLXhTV4FEeTHqokQ0qEXEZ5N9dRKoXT3al1Alcwrson_OtaALHldR9O7BO6Iq5_BV7-ERpoSYD8wGGhCcWQbjKkz5qHTa8yWRAfZaCLnK8Dzs0DPJtgMjQirittz8cpQQxQM4fhzXvG2x_Dtev4Y1YcZbzsaU6FpamC188SkjEDGOjYnf6CTk0VVbPk1DXFPIEGbOmc7b1unsq7uHOOkuRkGnTQ_d8aLNNPpeDvxP4agpI-ycfdH2ciG4sRXSKcdeAXGIHhNaI9T=w25-h24-no') left top no-repeat; */
+     background-image: url("button.png") ;
+     background-repeat: no-repeat;
+}
+
+label {
+    font-family: Georgia;
+  }
+.questions{
+     width:1200px;
+     margin:0px auto;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+ 
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    text-align:center;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  
+  
+@media screen and (max-width: 1199px) {
+    
+    .questions{
+        width:100%;
+        font-size:100%;
+  }
+  .container{
+      width:100%;
+  }
+ img{
+      width:10%;
+      float:left;
+  }
+h3.main{
+    width:100%;
+    font-size: 100%;
+}
+h1.main1{
+    width:100%;
+    text-align:center;
+    font-size: 100%;
+}
+.container span{
+    width:30%;
+    text-align:right;
+    font-size: 13px;
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    text-align:center;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  
+}
+
+  @media screen and (max-width: 600px) {
+    
+    .questions{
+        width:100%;
+        font-size:90%;
+         
+  }
+  .container{
+      width:100%;
+  }
+  img{
+      width:20%;
+      float:left;
+  }
+  h3.main{
+      width:60%;
+      font-size: 100%;
+  }
+  h1.main1{
+    width:100%;
+    text-align:center;
+    font-size: 100%;
+}
+.container span{
+    width:50%;
+    text-align:right;
+    font-size: 12px;
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    text-align:center;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+  }
+  
+
+}
+
+
+
+
